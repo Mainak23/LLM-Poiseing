@@ -19,7 +19,8 @@ def main():
     )
 
     print("Generating model report...")
-
+    model.save_pretrained("/content/my-llm-project/llm-inspection/model")
+    tokenizer.save_pretrained("/content/my-llm-project/llm-inspection/model")
     output_model = generate_model_report(
         model=model,
         model_name="Base Model",
